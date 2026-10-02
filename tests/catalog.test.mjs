@@ -100,3 +100,22 @@ test("request body reader limits bytes and cancels oversized streams",async()=>{
  let cancelled=false;const body=new ReadableStream({start(controller){controller.enqueue(new TextEncoder().encode("한글"));},cancel(){cancelled=true;}});
  assert.equal(await readLimitedBody(new Request("http://localhost",{method:"POST",body,duplex:"half"}),5),null);assert.equal(cancelled,true);
 });
+
+import {isAffiliateUrl} from "../lib/coupang-links.mjs";
+test("affiliate notices distinguish tracked product URLs from ordinary product URLs",()=>{
+ for(const url of ["https://link.coupang.com/a/abc123","https://www.coupang.com/vp/products/123?itemId=5&lptag=AF_TEST"]){assert.equal(isAffiliateUrl(url),true,url);}
+ for(const url of ["https://www.coupang.com/vp/products/123?itemId=5","https://www.coupang.com/vp/products/123?lptag=","https://link.coupang.com.evil.test/a/abc123","https://www.coupang.com@evil.test/vp/products/123?lptag=AF_TEST"]){assert.equal(isAffiliateUrl(url),false,url);}
+});
+test("expanded affiliate URLs cannot bypass disclosure validation but hidden items are allowed",()=>{
+ const content=structuredClone(initialContent);content.products[0].url="https://www.coupang.com/vp/products/123?lptag=AF_TEST";
+ assert.equal(contentSchema.safeParse(content).success,false);
+ content.products[0].active=false;assert.equal(contentSchema.safeParse(content).success,true);
+ content.products[0].active=true;content.affiliateActive=true;assert.equal(contentSchema.safeParse(content).success,true);
+});
+test("pending photos can be blank without removing products and cleared photos need an address",()=>{
+ const content=structuredClone(initialContent);content.products[0].image="";content.products[0].imageRights="pending";
+ assert.equal(contentSchema.safeParse(content).success,true);
+ assert.equal(publicCatalog(content).products.length,18);
+ content.products[0].imageRights="cleared";assert.equal(contentSchema.safeParse(content).success,false);
+ content.products[0].image="https://example.com/authorized.jpg";assert.equal(contentSchema.safeParse(content).success,true);
+});
