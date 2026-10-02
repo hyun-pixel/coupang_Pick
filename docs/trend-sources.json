@@ -1,0 +1,250 @@
+{
+  "researchedAt": "2026-10-02",
+  "purpose": "한국 쇼핑 트렌드 매거진 개편용 실제 제품·이미지·근거",
+  "status": "6 products / 3 bounded signals / 6 downloadable visually verified product images",
+  "globalNotes": [
+    "가격·평점·랭킹 수치는 의도적으로 포함하지 않음.",
+    "쿠팡 링크는 검색 엔진에 색인된 실제 상품 페이지에서 관찰한 URL. 실시간 구매가능 여부는 재확인이 필요함.",
+    "이미지는 실제 제조사/공식몰 소스이며 생성 이미지가 아님. 재사용 허용 여부는 모두 미확인.",
+    "상품페이지의 존재, 브랜드 캠페인, 기획전, 과거 SNS 성장 데이터를 구분해 표시해야 함."
+  ],
+  "signals": [
+    {
+      "id": "coupang-premium-food-2026",
+      "publishedAt": "2026-09-27",
+      "source": "쿠팡 뉴스룸",
+      "url": "https://news.coupang.com/archives/66987/",
+      "type": "retailer_promotion",
+      "title": "프리미엄 푸드 기획전",
+      "scope": "한국 쿠팡, 2026-10-04까지 진행되는 기획전",
+      "supportedClaim": "이야이야앤프렌즈 엑스트라 버진 올리브오일을 대표 상품으로 소개했다.",
+      "unsupportedClaims": [
+        "판매순위 1위",
+        "SNS에서 화제",
+        "매출 상승",
+        "이 정확한 쿠팡 상품 ID가 행사 할인 대상이라는 주장"
+      ],
+      "suggestedCopy": "쿠팡이 9월 27일 공개한 프리미엄 푸드 기획전에서 눈에 띈 브랜드. 제품군을 둘러봤어요."
+    },
+    {
+      "id": "tiktok-blast-2025",
+      "publishedAt": "2025-07-30",
+      "source": "TikTok Newsroom UK",
+      "url": "https://newsroom.tiktok.com/tiktok-shopping-report?lang=en-GB",
+      "type": "historical_platform_report",
+      "title": "TikTok UK Shopping Report 2025",
+      "scope": "영국 TikTok Shop, 2025-03-01~2025-05-29. 플랫폼 내부 데이터에 기반.",
+      "supportedClaim": "보고서는 Ninja Blast 무선 블렌더 주문이 해당 기간 1,800% 증가했다고 밝혔다.",
+      "unsupportedClaims": [
+        "한국 인기순위",
+        "2026년 현재 인기",
+        "매출 또는 판매대수 절대값"
+      ],
+      "suggestedCopy": "영국 TikTok의 2025년 보고서가 포착한 무선 블렌더 열풍. 지금은 어떤 제품인지 다시 살펴봤어요."
+    },
+    {
+      "id": "nerds-2026",
+      "publishedAt": "2026-02-04",
+      "source": "Ferrara",
+      "url": "https://www.ferrara.com/index.php/us/en/nerdsr-brings-its-gummy-character-and-its-taste-bud-andy-cohen-together-introduce-nerdsr-juicy",
+      "type": "brand_product_line_campaign",
+      "title": "NERDS Juicy Gummy Clusters Big Game 캠페인",
+      "scope": "미국 브랜드 캠페인, Juicy 신제품 중심",
+      "supportedClaim": "Ferrara가 Andy Cohen과 함께 Juicy Gummy Clusters 캠페인을 발표. 기존 크런치+구미에 액체 중심을 더하는 제품군 확장을 확인할 수 있다.",
+      "unsupportedClaims": [
+        "쿠팡 베리베리 제품이 이번 캠페인 제품",
+        "한국 베스트셀러",
+        "최신 SNS 조회수 순위"
+      ],
+      "suggestedCopy": "바삭한 겉과 쫀득한 속. 2026년에는 주스 중심까지 더한 신제품으로 확장된 식감 캔디를 원조 제품부터 살펴봤어요."
+    }
+  ],
+  "products": [
+    {
+      "id": "ninja-blast",
+      "name": "닌자 블라스트 포터블 블렌더",
+      "model": "BC151KR",
+      "category": "주방·가전",
+      "hook": "블렌더를 들고 나가는 쪽으로.",
+      "description": "무선으로 갈고, 같은 용기에서 바로 마시는 휴대용 블렌더.",
+      "features": [
+        "무선 휴대용 블렌더",
+        "USB-C 충전",
+        "음용 뚜껑과 컵 커버 구성"
+      ],
+      "productUrl": "https://www.coupang.com/vp/products/1380963?itemId=21775701091&vendorItemId=89832474885",
+      "productEvidence": "검색 엔진이 수집한 쿠팡 상품 페이지에서 BC151KR 모델과 상품 링크 확인. 실시간 재고·가격 미확인. 본문 상품번호는 7923483506으로 표시되어 쿠팡 합쳐진 상품 페이지 가능성 있음.",
+      "primarySourceUrl": "https://www.sharkninja.co.kr/product/닌자-블렌더-블라스트-모음딜-bc151kr-무선-블렌더-휴대용/99/category/85/display/1/",
+      "manualUrl": "https://compare.sharkninja.co.kr/load/21",
+      "imageUrl": "https://ecimg.cafe24img.com/pg2706b84939084044/sharkninjakr/web/product/big/20260708/3db754642f99eb9d5ad73fb8ef0dcde5.jpg",
+      "imageSource": "샤크닌자 코리아 공식 상품 페이지 img src",
+      "imageReuseStatus": "unknown",
+      "signalId": "tiktok-blast-2025",
+      "signalLabel": "과거 SNS 트렌드 · 영국 2025",
+      "limitations": [
+        "UK 보고서 결과를 한국 판매순위나 2026년 현재 인기라고 표시하지 말 것.",
+        "대표 사진과 연결 상품의 선택 색상이 다를 수 있어 모델 단위로 소개."
+      ],
+      "localImagePath": "C:/Users/User/Documents/Codex/2026-10-01/pc-prd-x20/work/product-images/ninja-blast.jpg",
+      "imageVerified": true,
+      "imageVerification": "직접 다운로드 성공 및 육안으로 해당 제품 확인. 원본 비율 유지, 제품사진을 생성하거나 수정하지 않음."
+    },
+    {
+      "id": "nerds-clusters",
+      "name": "너즈 구미 클러스터 베리베리",
+      "model": "Very Berry 226g",
+      "category": "푸드",
+      "hook": "한 입에서 바삭, 그리고 쫀득.",
+      "description": "작은 크런치 캔디가 부드러운 구미를 감싼 두 겹 식감.",
+      "features": [
+        "크런치 캔디로 감싼 구미",
+        "베리베리 맛",
+        "226g 판매 옵션 확인"
+      ],
+      "productUrl": "https://www.coupang.com/vp/products/9410616536?itemId=27651862191&vendorItemId=94614301898",
+      "productEvidence": "쿠팡 검색 인덱스 상품 페이지에서 제품명, 226g 옵션, 실제 상품 URL 확인. 실시간 재고·가격 미확인.",
+      "primarySourceUrl": "https://www.nerdscandy.com/index.php/crunchy-gummy-yummy",
+      "imageUrl": "https://www.ferrara.com/sites/default/files/styles/medium_768w/public/2025-03/7920006068_brand.webp?itok=dlrpmn3N",
+      "imageSource": "https://www.ferrara.com/index.php/us/en/ferraras-nerdsr-tops-non-chocolate-category-most-innovative-new-product-award-2022-sweets-snacks 의 첫 제품 이미지. 제조사 프로모션 사진(보라 배경).",
+      "imageReuseStatus": "unknown",
+      "signalId": "nerds-2026",
+      "signalLabel": "브랜드 동향 · 미국 2026.02",
+      "limitations": [
+        "2026년 캠페인은 Juicy 신제품에 관한 발표. 이 Very Berry 원조 제품의 판매순위 근거가 아님.",
+        "국내 판매 패키지와 공식 글로벌 사진의 표기가 다를 수 있음.",
+        "확보한 제조사 사진에는 미국 포장 8oz(227g)가 표시됨. 국내 쿠팡 226g 표기와 차이를 주의할 것."
+      ],
+      "alternateImageUrl": "https://www.nerdscandy.com/sites/default/files/2022-06/very-berry-product-right-img-new.png",
+      "alternateImageStatus": "원본 NERDS 도메인 파일은 403 응답으로 현지 다운로드 불가",
+      "localImagePath": "C:/Users/User/Documents/Codex/2026-10-01/pc-prd-x20/work/product-images/nerds-ferrara.webp",
+      "imageVerified": true,
+      "imageVerification": "직접 다운로드 성공 및 육안으로 해당 제품 확인. 원본 비율 유지, 제품사진을 생성하거나 수정하지 않음."
+    },
+    {
+      "id": "yiayia-olive",
+      "name": "이야이야앤프렌즈 엑스트라 버진 올리브오일",
+      "model": "오리지널 500ml",
+      "category": "푸드·키친",
+      "hook": "식탁 위에 두고 싶은 올리브오일.",
+      "description": "눈 모양 캐릭터가 그려진 검은 병에 담은 500ml 올리브오일.",
+      "features": [
+        "500ml 용량",
+        "엑스트라 버진 올리브오일",
+        "캐릭터를 담은 검은색 병"
+      ],
+      "productUrl": "https://www.coupang.com/vp/products/8667380368?itemId=24057644094&sourceType=SDP_BRANDSHOP_RECOMMENDATION&vendorItemId=91273967635",
+      "productEvidence": "쿠팡 검색 인덱스에서 제품명, 500ml와 판매자 주식회사 이야이야앤프렌즈를 확인한 실제 상품 URL. 실시간 재고·가격 미확인.",
+      "primarySourceUrl": "https://yiayiaandfriends.co.kr/product/엑스트라-버진-올리브오일-500ml/24/category/30/display/1/",
+      "imageUrl": "https://ecimg.cafe24img.com/pg428b92659932001/yiayiastore/web/product/big/20251202/a5eda420a23c83e594a5e3142f95e24a.jpg",
+      "imageSource": "이야이야앤프렌즈 공식 상품 페이지 og:image",
+      "imageReuseStatus": "unknown",
+      "signalId": "coupang-premium-food-2026",
+      "signalLabel": "쿠팡 기획전 · 2026.09.27",
+      "limitations": [
+        "9월 27일 뉴스룸의 대표 제품명과 같은 제품군. 특정 판매자/상품 ID가 행사 대상이라는 의미는 아님.",
+        "기획전 소개 사실이며 판매량·인기순위 근거가 아님.",
+        "기획전 종료일은 2026-10-04."
+      ],
+      "localImagePath": "C:/Users/User/Documents/Codex/2026-10-01/pc-prd-x20/work/product-images/yiayia-olive.jpg",
+      "imageVerified": true,
+      "imageVerification": "직접 다운로드 성공 및 육안으로 해당 제품 확인. 원본 비율 유지, 제품사진을 생성하거나 수정하지 않음."
+    },
+    {
+      "id": "scrub-daddy",
+      "name": "스크럽대디 온도 반응 수세미",
+      "model": "Scrub Daddy",
+      "category": "생활·청소",
+      "hook": "물 온도에 따라 성격이 달라지는 수세미.",
+      "description": "찬물에는 단단하게, 따뜻한 물에는 부드러워지는 스펀지.",
+      "features": [
+        "찬물에서 단단해지는 소재",
+        "따뜻한 물에서 부드러워지는 소재",
+        "스마일 모양 디자인"
+      ],
+      "productUrl": "https://www.coupang.com/vp/products/8520302739",
+      "productEvidence": "쿠팡 검색 인덱스에서 스크럽대디 수세미 랜덤발송 제품 확인. 선택된 수량은 6개이므로 단품 가격과 혼동 금지.",
+      "primarySourceUrl": "https://scrubdaddy.kr/product/detail.html?product_no=168",
+      "imageUrl": "https://cafe24.poxo.com/ec01/vorio01/gf5Q6CJIJey89+xjtfalxxFUYOM+206D1eBeQArDZUhxt1quGIu66PxbYEt63USL5UwnqYkjWRD7mFV/xk6Shg==/_/web/product/big/202406/a0301c565005aa2b071494bb95543e55.jpg",
+      "imageSource": "스크럽대디 한국 공식몰 제품 페이지 img src",
+      "imageReuseStatus": "unknown",
+      "signalId": null,
+      "signalLabel": "에디터 발견",
+      "limitations": [
+        "최신 SNS 인기 근거를 확보하지 못했으므로 바이럴·인기·판매순위 문구를 사용하지 말 것.",
+        "공식 사진은 3개 혼합색상 세트, 쿠팡 링크는 수량/색상 옵션이 다를 수 있음."
+      ],
+      "alternateImageUrl": "https://cafe24.poxo.com/ec01/vorio01/gf5Q6CJIJey89+xjtfalxxFUYOM+206D1eBeQArDZUhxt1quGIu66PxbYEt63USL5UwnqYkjWRD7mFV/xk6Shg==/_/web/product/extra/big/202410/36a4187fe7ce9b859494ef422fd4f837.png",
+      "alternateImageDescription": "코발트 배경에서 유리잔 안쪽을 실제 수세미로 닦는 사용 사진",
+      "localImagePath": "C:/Users/User/Documents/Codex/2026-10-01/pc-prd-x20/work/product-images/scrub-daddy.jpg",
+      "imageVerified": true,
+      "imageVerification": "직접 다운로드 성공 및 육안으로 해당 제품 확인. 원본 비율 유지, 제품사진을 생성하거나 수정하지 않음."
+    },
+    {
+      "id": "time-timer",
+      "name": "타임타이머 MOD 홈에디션",
+      "model": "Fern Green",
+      "category": "책상·도구",
+      "hook": "남은 시간이 면적으로 보인다.",
+      "description": "색 원판이 줄어드는 모습으로 남은 시간을 보여주는 60분 타이머.",
+      "features": [
+        "60분 비주얼 타이머",
+        "초침 똑딱 소리 없음",
+        "종료 알림음 켜기·끄기 가능",
+        "AA 배터리 1개 별도 필요"
+      ],
+      "productUrl": "https://www.coupang.com/vp/products/7590622392",
+      "productEvidence": "쿠팡 검색 인덱스에서 루덴스 정식수입 홈에디션 11종 제품과 그린 색상 확인. 실시간 재고·가격 미확인.",
+      "primarySourceUrl": "https://www.timetimer.com/products/time-timer-mod-home-edition",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0704/6531/products/TTM9-HFG-W_WEB_2500x2500_Main.jpg?v=1718304633",
+      "imageSource": "Time Timer 제조사 제품 페이지 JSON-LD ImageObject URL, 2500×2500 원본",
+      "imageReuseStatus": "unknown",
+      "signalId": null,
+      "signalLabel": "에디터 발견",
+      "limitations": [
+        "현재 공식 페이지에 Wirecutter 2026 수상 문구가 있으나 수상 원문/발표일을 별도 확인하지 않아 인기 근거로 채택하지 않음.",
+        "집중력 또는 특정 질환 개선 효능 주장하지 말 것."
+      ],
+      "localImagePath": "C:/Users/User/Documents/Codex/2026-10-01/pc-prd-x20/work/product-images/time-timer.jpg",
+      "imageVerified": true,
+      "imageVerification": "직접 다운로드 성공 및 육안으로 해당 제품 확인. 원본 비율 유지, 제품사진을 생성하거나 수정하지 않음."
+    },
+    {
+      "id": "brother-cube",
+      "name": "브라더 P-touch CUBE 라벨프린터",
+      "model": "PT-P300BT",
+      "category": "책상·정리",
+      "hook": "이름 붙이면 정리가 시작된다.",
+      "description": "스마트폰에서 디자인한 라벨을 블루투스로 출력하는 작은 큐브.",
+      "features": [
+        "스마트폰 앱으로 라벨 디자인",
+        "Bluetooth 연결",
+        "최대 12mm TZe 테이프",
+        "수동 커터"
+      ],
+      "productUrl": "https://www.coupang.com/vp/products/319597032?itemId=1022258775&vendorItemId=5462427468",
+      "productEvidence": "쿠팡 검색 인덱스에서 PT-P300BT 제품·실제 URL 확인. 실시간 재고·가격 미확인.",
+      "primarySourceUrl": "https://www.brother-korea.com/ko-kr/labellers/all-labellers/pt-p300bt",
+      "imageUrl": "https://www.brother-korea.com/-/media/ap2/korea/p-touch-cube/pt-p300bt/pt-p300_01.webp?rev=-1&hash=B549EEA2DF18429A5DB9C05DBD4D7CE0",
+      "imageSource": "https://www.brother-korea.com/ko-kr/contents/pt-p300bt 의 pt-p300_01 img src. 글자 주석 없는 정면 사진.",
+      "imageReuseStatus": "unknown",
+      "signalId": null,
+      "signalLabel": "에디터 발견",
+      "limitations": [
+        "최근 인기 근거 없음.",
+        "전원 어댑터 또는 배터리는 구매 구성 확인 필요."
+      ],
+      "localImagePath": "C:/Users/User/Documents/Codex/2026-10-01/pc-prd-x20/work/product-images/brother-clean.webp",
+      "imageVerified": true,
+      "imageVerification": "직접 다운로드 성공 및 육안으로 해당 제품 확인. 원본 비율 유지, 제품사진을 생성하거나 수정하지 않음."
+    }
+  ],
+  "existingProductImageUpdates": [
+    {
+      "id": "tefal-pan",
+      "checkedAt": "2026-10-02",
+      "sourceUrl": "https://prod.danawa.com/info/?pcode=122680485",
+      "imageUrl": "https://img.danuri.io/catalog-image/485/680/122/383cedf810ac41799714fc65feb7b275.jpg?shrink=330:*&_v=20261002080452",
+      "note": "동일 28cm 제품의 단일 대표사진. 다나와 표기 원출처 쿠팡. 상업적 사용권 미확인."
+    }
+  ]
+}
