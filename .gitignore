@@ -51,3 +51,6 @@ next-env.d.ts
 
 # Local browser checks and screenshots
 /preview/
+
+# Next.js local editor database
+/.local/

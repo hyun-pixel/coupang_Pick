@@ -1,2 +1,4 @@
 "use client";
-export default function ErrorPage({reset}:{reset:()=>void}){return <main className="admin-gate"><a href="/" className="brand">요즘픽.</a><h1>잠시 연결이 끊겼어요</h1><p>상품을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p><button className="primary-button" onClick={reset}>다시 불러오기</button></main>}
+import Link from "next/link";
+
+export default function ErrorPage({reset}:{reset:()=>void}){return <main className="admin-gate"><Link prefetch={false} href="/" className="brand">요즘픽.</Link><h1>잠시 연결이 끊겼어요</h1><p>상품을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p><button className="primary-button" onClick={reset}>다시 불러오기</button></main>}
