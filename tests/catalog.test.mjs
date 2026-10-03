@@ -9,11 +9,11 @@ test("only observed Coupang product and affiliate URL forms are accepted",()=>{
 test("production administration fails closed without an exact owner",()=>{
  assert.equal(canAdmin(undefined,undefined,true),false);assert.equal(canAdmin("local_seedy",undefined,false),false);assert.equal(canAdmin("any",undefined,false),false);assert.equal(canAdmin("another","owner",false),false);assert.equal(canAdmin("owner","owner",false),true);assert.equal(canAdmin("local_seedy",undefined,true),true);assert.equal(canAdmin("local_seedy","owner",true),false);
 });
-test("seed has eighteen valid distinct products",()=>{assert.equal(initialContent.products.length,18);assert.equal(contentSchema.safeParse(initialContent).success,true);});
+test("seed has nineteen valid distinct products",()=>{assert.equal(initialContent.products.length,19);assert.equal(contentSchema.safeParse(initialContent).success,true);});
 test("filters combine category, theme and multilingual case-insensitive words",()=>{
  assert.equal(filterProducts(initialContent.products,"PEBBLE 로지텍","digital","집의 재발견","recommended").length,1);
  assert.equal(filterProducts(initialContent.products,"PEBBLE","food","전체","recommended").length,0);
- assert.equal(filterProducts(initialContent.products,"","all","간편한 한 끼","recommended").length,8);
+ assert.equal(filterProducts(initialContent.products,"","all","간편한 한 끼","recommended").length,9);
 });
 test("hidden products never appear and sorting does not mutate source",()=>{
  const products=structuredClone(initialContent.products);products[0].active=false;const before=JSON.stringify(products);
@@ -24,7 +24,7 @@ test("duplicate ids and untrusted links fail validation",()=>{
  const b=structuredClone(initialContent);b.products[0].url="https://evil.test";assert.equal(contentSchema.safeParse(b).success,false);
 });
 test("affiliate links require a visible affiliate disclosure",()=>{
- const a=structuredClone(initialContent);a.products[0].url="https://link.coupang.com/a/abc123";assert.equal(contentSchema.safeParse(a).success,false);a.affiliateActive=true;assert.equal(contentSchema.safeParse(a).success,true);
+ const a=structuredClone(initialContent);a.affiliateActive=false;a.products[0].url="https://link.coupang.com/a/abc123";assert.equal(contentSchema.safeParse(a).success,false);a.affiliateActive=true;assert.equal(contentSchema.safeParse(a).success,true);
 });
 test("missing tags and invalid image schemes cannot be saved",()=>{
  const a=structuredClone(initialContent);a.products[0].tags=[];assert.equal(contentSchema.safeParse(a).success,false);
@@ -78,7 +78,7 @@ test("visitor data keeps product details but removes every unapproved image URL"
  assert.equal(result.products[0].url,content.products[0].url);
  assert.deepEqual(result.products[0].evidence,content.products[0].evidence);
  assert.equal(JSON.stringify(content),before);
- for(const p of content.products)assert.equal(JSON.stringify(result).includes(p.image),false);
+ for(const p of content.products.filter(p=>p.image))assert.equal(JSON.stringify(result).includes(p.image),false);
 });
 test("cleared photos display, hidden products stay excluded, and source data remains untouched",()=>{
  const content=structuredClone(initialContent);content.products[0].imageRights="cleared";content.products[1].active=false;
@@ -107,7 +107,7 @@ test("affiliate notices distinguish tracked product URLs from ordinary product U
  for(const url of ["https://www.coupang.com/vp/products/123?itemId=5","https://www.coupang.com/vp/products/123?lptag=","https://link.coupang.com.evil.test/a/abc123","https://www.coupang.com@evil.test/vp/products/123?lptag=AF_TEST"]){assert.equal(isAffiliateUrl(url),false,url);}
 });
 test("expanded affiliate URLs cannot bypass disclosure validation but hidden items are allowed",()=>{
- const content=structuredClone(initialContent);content.products[0].url="https://www.coupang.com/vp/products/123?lptag=AF_TEST";
+ const content=structuredClone(initialContent);content.affiliateActive=false;content.products.forEach(p=>{if(isAffiliateUrl(p.url))p.active=false;});content.products[0].url="https://www.coupang.com/vp/products/123?lptag=AF_TEST";
  assert.equal(contentSchema.safeParse(content).success,false);
  content.products[0].active=false;assert.equal(contentSchema.safeParse(content).success,true);
  content.products[0].active=true;content.affiliateActive=true;assert.equal(contentSchema.safeParse(content).success,true);
@@ -115,7 +115,7 @@ test("expanded affiliate URLs cannot bypass disclosure validation but hidden ite
 test("pending photos can be blank without removing products and cleared photos need an address",()=>{
  const content=structuredClone(initialContent);content.products[0].image="";content.products[0].imageRights="pending";
  assert.equal(contentSchema.safeParse(content).success,true);
- assert.equal(publicCatalog(content).products.length,18);
+ assert.equal(publicCatalog(content).products.length,19);
  content.products[0].imageRights="cleared";assert.equal(contentSchema.safeParse(content).success,false);
  content.products[0].image="https://example.com/authorized.jpg";assert.equal(contentSchema.safeParse(content).success,true);
 });

@@ -23,7 +23,7 @@ Windows에서는 start-preview.cmd로도 열 수 있습니다.
 ## 배포와 관리자 연결
 
 [버셀 배포 안내](docs/VERCEL.md)에 설정 메뉴와 연결 순서를 정리했습니다.
-환경변수를 등록하지 않아도 기본 상품 18개의 방문자 페이지를 배포할 수 있습니다.
+환경변수를 등록하지 않아도 기본 상품 19개의 방문자 페이지를 배포할 수 있습니다.
 온라인 관리자 로그인과 영구 저장에는 별도의 Supabase 프로젝트 연결이 필요합니다.
 
 개발 환경에서는 .local/content.sqlite에 저장합니다. 이 파일은 공개 서버로 전송하지 않습니다.
@@ -36,7 +36,7 @@ Windows에서는 start-preview.cmd로도 열 수 있습니다.
 - lib/admin-auth.ts, lib/supabase-server.ts, proxy.ts: 운영자 인증과 세션
 - lib/local-content.ts: 로컬 개발용 SQLite 저장소
 - db/supabase-setup.sql: 전용 Supabase 저장 테이블과 접근 권한
-- data/products.json: 기본 상품 18개
+- data/products.json: 기본 상품 19개
 - vercel.json, next.config.ts: Vercel 및 Next.js 빌드 설정
 - tests/: 상품 규칙과 저장·로그인 경계 검증
 - docs/HANDOFF.md: 화면 사용 방법과 쿠팡 파트너스 검토 기록

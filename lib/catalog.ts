@@ -13,7 +13,7 @@ export type Product = {id:string;brand:string;name:string;category:CategoryId;un
 export type SiteContent = {heroTitle:string;heroDescription:string;themeTitle:string;products:Product[];affiliateActive:boolean};
 export const initialContent:SiteContent = {
  heroTitle:"쿠팡 가기 전,\n요즘 뭐 뜨는지.",heroDescription:"어디서, 왜 주목받았을까?\n알고 보면 더 재밌는 쇼핑의 발견.",
- themeTitle:"한 끼도,\n새롭게 먹고 싶어.",affiliateActive:false,products:seedProducts as Product[]
+ themeTitle:"한 끼도,\n새롭게 먹고 싶어.",affiliateActive:true,products:seedProducts as Product[]
 };
 export const themes = ["전체","간편한 한 끼","집의 재발견","나를 위한 시간"];
 export function filterProducts(products:Product[],query:string,category:string,theme:string,sort:string){

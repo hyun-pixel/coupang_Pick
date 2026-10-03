@@ -89,6 +89,25 @@
     ]
   },
   {
+    "id": "gomgom-eggs",
+    "brand": "곰곰",
+    "name": "무항생제 신선한 대란",
+    "category": "food",
+    "unit": "30구 × 1개",
+    "description": "계란찜, 달걀말이, 볶음밥에 두루 활용할 수 있는 대란 30구 구성이에요.",
+    "image": "",
+    "url": "https://link.coupang.com/a/hxuda5yhr2",
+    "tags": [
+      "간편한 한 끼"
+    ],
+    "addedAt": "2026-10-03",
+    "active": true,
+    "imageRights": "pending",
+    "hook": "한 판으로 준비하는,\n매일 다른 한 끼.",
+    "editorialNote": "식단에 맞춰 여러 요리로 활용해 보세요. 최신 상품 구성과 보관 방법은 쿠팡 판매 페이지에서 확인해 주세요.",
+    "evidence": []
+  },
+  {
     "id": "scrub-daddy",
     "name": "스크럽대디 온도 반응 수세미",
     "unit": "Scrub Daddy",
